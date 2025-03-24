@@ -2766,6 +2766,10 @@ socketcache
 soundex
 sparkBar
 sparkbar
+sparseGrams
+sparseGramsHashes
+sparseGramsHashesUTF
+sparseGramsUTF
 sparsehash
 speedscope
 splitBy
