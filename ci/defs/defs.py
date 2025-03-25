@@ -426,7 +426,7 @@ class ArtifactConfigs:
     clickhouse_binaries = Artifact.Config(
         name="...",
         type=Artifact.Type.S3,
-        path=f"{TEMP_DIR}/build/programs/clickhouse",
+        path=f"{TEMP_DIR}/build/programs/self-extracting/clickhouse",
     ).parametrize(
         names=[
             ArtifactNames.CH_AMD_DEBUG,

@@ -66,4 +66,11 @@ def should_skip_job(job_name):
     ):
         return True, "Skipped, not labeled with 'pr-performance'"
 
+    # TODO: test
+    if "build" not in job_name.lower() and "perf" not in job_name.lower():
+        return True, "Hack"
+
+    if "release" not in job_name.lower() and "loong" not in job_name.lower():
+        return True, "Hack"
+
     return False, ""
